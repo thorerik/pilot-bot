@@ -20,13 +20,13 @@ export class Info implements Command {
 
         embed.color = Util.resolveColor([0, 255, 255]);
 
-        embed.thumbnail = {url: "https://i.imgur.com/ibsHxIR.png"};
+        embed.thumbnail = {url: "https://i.imgur.com/GA1uinv.png"};
 
-        embed.title = "About Emoji bot";
+        embed.title = "About Pilot bot";
 
         embed.author = {
-            iconURL: "https://i.imgur.com/ibsHxIR.png",
-            name: "Emojibot",
+            iconURL: "https://i.imgur.com/GA1uinv.png",
+            name: "Pilot bot",
         };
 
         embed.footer = {
@@ -35,7 +35,6 @@ export class Info implements Command {
 
         embed.addField("Version", version);
         embed.addField("Author", "Tuxy Fluffyclaws#1337", true);
-        embed.addField("Support guild", "https://discord.gg/yk8z9bz", true);
         embed.addField("Guilds", this.App.client.guilds.size, true);
         embed.addField("Users", this.App.client.users.size, true);
 

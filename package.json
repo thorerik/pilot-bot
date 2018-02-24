@@ -1,6 +1,6 @@
 {
-  "name": "emoji-bot",
-  "version": "0.4.2",
+  "name": "pilot-bot",
+  "version": "0.5.0",
   "dependencies": {
     "@types/node": "^8.5.9",
     "discord.js": "github:hydrabolt/discord.js#master",

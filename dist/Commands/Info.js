@@ -15,18 +15,17 @@ class Info {
         const version = require("../../package.json").version;
         const embed = new discord_js_1.MessageEmbed();
         embed.color = discord_js_1.Util.resolveColor([0, 255, 255]);
-        embed.thumbnail = { url: "https://i.imgur.com/ibsHxIR.png" };
-        embed.title = "About Emoji bot";
+        embed.thumbnail = { url: "https://i.imgur.com/GA1uinv.png" };
+        embed.title = "About Pilot bot";
         embed.author = {
-            iconURL: "https://i.imgur.com/ibsHxIR.png",
-            name: "Emojibot",
+            iconURL: "https://i.imgur.com/GA1uinv.png",
+            name: "Pilot bot",
         };
         embed.footer = {
             text: "Created by Tuxy Fluffyclaws#1337",
         };
         embed.addField("Version", version);
         embed.addField("Author", "Tuxy Fluffyclaws#1337", true);
-        embed.addField("Support guild", "https://discord.gg/yk8z9bz", true);
         embed.addField("Guilds", this.App.client.guilds.size, true);
         embed.addField("Users", this.App.client.users.size, true);
         message.channel.send({ embed });
